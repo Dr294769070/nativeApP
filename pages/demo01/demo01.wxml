@@ -1,0 +1,68 @@
+<!--pages/demo01/demo01.wxml-->
+<text>行内标签1 text</text>
+<text>行内标签2 text</text>
+
+<view>块状标签1 view</view>
+<view>块状标签2 view</view>
+
+<view>{{msg}}</view>
+<view>{{obj}}</view>
+<view>
+    <!-- 花括号前后不能有空格，否则识别失败 -->
+    <checkbox checked="{{isCheck}}">
+    </checkbox>
+</view>
+<view data-msg="{{msg}}">hahaha</view>
+
+
+<!-- 表达式 -->
+
+<!-- 可以在花括号内加入表达式
+  表达式 指一些简单运算 
+  字符串拼接 数字加减 三元表达式等
+
+  语句 指一些复杂的代码块
+  if else  for  do while  switch 等
+
+  花括号中只能写表达式不能写语句
+ -->
+<view>{{ 1 + 1}}</view>
+<view>{{ 1 + '1'}}</view>
+<view>{{ flag ? '正确' : '错误' }}</view>
+
+
+<!-- wx:for 循环 -->
+<view>
+    <view wx:for="{{list}}" wx:key="id"
+     wx:for-itme="item" wx:for-index="index">
+        <text>item.name: {{item.name}}   </text>
+        <text>index: {{index}}</text>
+    </view>  
+</view>
+<!-- 嵌套循环时，for-item 和 for-index对应的变量名不可重复
+    没有多重循环时，也可以省略for-item 和 for-index -->
+<view>
+    <view wx:for="{{list}}" wx:key="id">
+        <text>item.name: {{item.name}}   </text>
+        <text>index: {{index}}</text>
+    </view>  
+</view>
+<!-- 普通数组，如元素均为字符串或数字 wx:key="*this" key即元素自身 -->
+<view>
+    <view wx:for="{{list2}}" wx:key="*this">
+        <text>item: {{item}}   </text>
+    </view>  
+</view>
+
+<!-- 对象循环 wx:for-item 代表值 wx:for-index 代表键 -->
+<view>
+    <view wx:for="{{map}}" wx:key="index">
+        <text>{{index}} : {{item}}</text>
+    </view>  
+</view>
+<!-- 对象循环 为了看起来语义更加明确 -->
+<view>
+    <view wx:for="{{map}}" wx:key="index" wx:for-item="value" wx:for-index="key">
+        <text>{{key}} : {{value}}</text>
+    </view>  
+</view>

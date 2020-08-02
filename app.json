@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/demo01/demo01",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#409EFF",
+    "navigationBarTitleText": "原生小程序",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
