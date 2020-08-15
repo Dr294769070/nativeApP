@@ -1,0 +1,4 @@
+/* pages/demo03/demo03.wxss */
+.br-view{
+    height: 30rpx;
+}

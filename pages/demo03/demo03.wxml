@@ -1,0 +1,28 @@
+<button open-type="concat">concat</button>
+<button open-type="share">share</button>
+<button open-type="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo">getUserInfo</button>
+<button open-type="launchApp">launchApp</button>
+<button open-type="openSetting">openSetting</button>
+<button open-type="feedback">feedback</button>
+
+<view class="br-view"></view>
+
+<icon type="success" size="60" color="pink"></icon>
+
+<view class="br-view"></view>
+
+<radio-group bindchange="handleChange">
+    <radio color="pink" value="male">男</radio>
+    <radio color="pink" value="female">女</radio>
+</radio-group>
+<view>选择：{{gender}}</view>
+
+<view class="br-view"></view>
+
+<checkbox-group bindchange="handleChangeCheckbox">
+    <checkbox wx:for="{{list}}" value="{{item.value}}" >
+        {{item.name}}
+    </checkbox>
+</checkbox-group>
+<view>选择：{{checklist}}</view>

@@ -1,0 +1,9 @@
+<image class="img1" mode='widthFix' src="https://frank-1302698468.cos.ap-beijing.myqcloud.com/nativeApp/wxb.jpg" />
+
+
+<rich-text nodes="{{html}}">
+</rich-text>
+
+<rich-text nodes="{{html2}}">
+</rich-text>
+
