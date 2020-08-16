@@ -1,0 +1,7 @@
+<!--components/tabs/tab.wxml-->
+<view>
+<text>{{aaa}}</text>
+<slot>
+    <!-- 插槽 -->
+</slot>
+</view>

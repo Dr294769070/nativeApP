@@ -1,0 +1,4 @@
+<Tabs aaa="123" bindchange="handlChange">
+    <view>slot插槽</view>
+</Tabs>
+
